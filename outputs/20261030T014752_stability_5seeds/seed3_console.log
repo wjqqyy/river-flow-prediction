@@ -1,0 +1,52 @@
+Output: D:\PYJH\outputs\20261030T014822_seed3
+Fixed design: seed=3; train/validation/test=3617/731/1096; CNN parameters=2673
+epoch=10 train_mse_z=0.12265621 validation_mse_z=0.06176303 best_epoch=9
+epoch=20 train_mse_z=0.11346669 validation_mse_z=0.05852021 best_epoch=14
+epoch=30 train_mse_z=0.10776375 validation_mse_z=0.06097822 best_epoch=25
+epoch=40 train_mse_z=0.10396426 validation_mse_z=0.05140370 best_epoch=39
+epoch=50 train_mse_z=0.10096976 validation_mse_z=0.05166717 best_epoch=49
+epoch=60 train_mse_z=0.10018873 validation_mse_z=0.04884108 best_epoch=58
+epoch=70 train_mse_z=0.09764665 validation_mse_z=0.04828423 best_epoch=58
+epoch=73 train_mse_z=0.09823593 validation_mse_z=0.04900695 best_epoch=58
+            model    n  MAE_m3_s  RMSE_m3_s      NSE  negative_predictions
+      persistence 1096 45.401103 127.357536 0.800457                     0
+linear_regression 1096 50.120963 104.754397 0.865001                     0
+              cnn 1096 35.934646  96.290657 0.885934                     0
+{
+  "status": "complete",
+  "output_directory": "D:\\PYJH\\outputs\\20261030T014822_seed3",
+  "seed": 3,
+  "epochs_run": 73,
+  "best_epoch": 58,
+  "best_validation_mse_z": 0.04733512923121452,
+  "parameter_count": 2673,
+  "elapsed_seconds": 6.4919316,
+  "stop_reason": "validation patience 15",
+  "checks": "PASS: dates, values, exclusions, normalization, checkpoint reload, saved metrics, persistence, OLS coefficients, source hashes",
+  "test_metrics": [
+    {
+      "model": "persistence",
+      "n": 1096,
+      "MAE_m3_s": 45.40110289481063,
+      "RMSE_m3_s": 127.35753578522021,
+      "NSE": 0.8004570589207193,
+      "negative_predictions": 0
+    },
+    {
+      "model": "linear_regression",
+      "n": 1096,
+      "MAE_m3_s": 50.12096322153914,
+      "RMSE_m3_s": 104.75439743417044,
+      "NSE": 0.8650006739646761,
+      "negative_predictions": 0
+    },
+    {
+      "model": "cnn",
+      "n": 1096,
+      "MAE_m3_s": 35.934646142640304,
+      "RMSE_m3_s": 96.29065728993089,
+      "NSE": 0.8859342194382451,
+      "negative_predictions": 0
+    }
+  ]
+}

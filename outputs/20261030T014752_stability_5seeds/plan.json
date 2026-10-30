@@ -1,0 +1,20 @@
+{
+  "seeds": [
+    42,
+    0,
+    1,
+    2,
+    3
+  ],
+  "retained_original_run": "D:\\PYJH\\outputs\\20261030T005841_seed42",
+  "additional_seeds": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "standard_deviation_ddof": 1,
+  "policy": "All agreed seeds retained; no tuning or test-based model selection; seed42 remains the example curve.",
+  "reference_config_sha256": "9908458476c80dc6de2d151b1c9cb4f97f66f7973089138021282ab5e17c8d51",
+  "training_script_sha256": "afd4b0668c045a2b1c88b25f399da8119af1f07441067cceb2235de0fa919548"
+}

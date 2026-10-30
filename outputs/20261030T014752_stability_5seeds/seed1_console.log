@@ -1,0 +1,54 @@
+Output: D:\PYJH\outputs\20261030T014803_seed1
+Fixed design: seed=1; train/validation/test=3617/731/1096; CNN parameters=2673
+epoch=10 train_mse_z=0.11653224 validation_mse_z=0.05554120 best_epoch=10
+epoch=20 train_mse_z=0.11028025 validation_mse_z=0.05291462 best_epoch=19
+epoch=30 train_mse_z=0.10930134 validation_mse_z=0.04904182 best_epoch=30
+epoch=40 train_mse_z=0.11006187 validation_mse_z=0.05109873 best_epoch=35
+epoch=50 train_mse_z=0.10431653 validation_mse_z=0.04665690 best_epoch=50
+epoch=60 train_mse_z=0.10343726 validation_mse_z=0.04446856 best_epoch=60
+epoch=70 train_mse_z=0.09958457 validation_mse_z=0.04560563 best_epoch=69
+epoch=80 train_mse_z=0.09935627 validation_mse_z=0.04792476 best_epoch=69
+epoch=90 train_mse_z=0.09699341 validation_mse_z=0.04397392 best_epoch=84
+epoch=100 train_mse_z=0.09563509 validation_mse_z=0.05000738 best_epoch=94
+            model    n  MAE_m3_s  RMSE_m3_s      NSE  negative_predictions
+      persistence 1096 45.401103 127.357536 0.800457                     0
+linear_regression 1096 50.120963 104.754397 0.865001                     0
+              cnn 1096 35.248897  96.518972 0.885393                     0
+{
+  "status": "complete",
+  "output_directory": "D:\\PYJH\\outputs\\20261030T014803_seed1",
+  "seed": 1,
+  "epochs_run": 100,
+  "best_epoch": 94,
+  "best_validation_mse_z": 0.04201003909111023,
+  "parameter_count": 2673,
+  "elapsed_seconds": 8.166659600000001,
+  "stop_reason": "max epochs 100",
+  "checks": "PASS: dates, values, exclusions, normalization, checkpoint reload, saved metrics, persistence, OLS coefficients, source hashes",
+  "test_metrics": [
+    {
+      "model": "persistence",
+      "n": 1096,
+      "MAE_m3_s": 45.40110289481063,
+      "RMSE_m3_s": 127.35753578522021,
+      "NSE": 0.8004570589207193,
+      "negative_predictions": 0
+    },
+    {
+      "model": "linear_regression",
+      "n": 1096,
+      "MAE_m3_s": 50.12096322153914,
+      "RMSE_m3_s": 104.75439743417044,
+      "NSE": 0.8650006739646761,
+      "negative_predictions": 0
+    },
+    {
+      "model": "cnn",
+      "n": 1096,
+      "MAE_m3_s": 35.24889662160423,
+      "RMSE_m3_s": 96.51897227389816,
+      "NSE": 0.8853926549123842,
+      "negative_predictions": 0
+    }
+  ]
+}

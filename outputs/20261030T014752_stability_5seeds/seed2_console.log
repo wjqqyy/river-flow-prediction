@@ -1,0 +1,51 @@
+Output: D:\PYJH\outputs\20261030T014813_seed2
+Fixed design: seed=2; train/validation/test=3617/731/1096; CNN parameters=2673
+epoch=10 train_mse_z=0.12324681 validation_mse_z=0.05542571 best_epoch=10
+epoch=20 train_mse_z=0.11603565 validation_mse_z=0.05673599 best_epoch=12
+epoch=30 train_mse_z=0.11320117 validation_mse_z=0.05719196 best_epoch=22
+epoch=40 train_mse_z=0.11399237 validation_mse_z=0.05096967 best_epoch=35
+epoch=50 train_mse_z=0.10792855 validation_mse_z=0.04974139 best_epoch=45
+epoch=60 train_mse_z=0.10772966 validation_mse_z=0.05268796 best_epoch=51
+epoch=66 train_mse_z=0.10534168 validation_mse_z=0.04873636 best_epoch=51
+            model    n  MAE_m3_s  RMSE_m3_s      NSE  negative_predictions
+      persistence 1096 45.401103 127.357536 0.800457                     0
+linear_regression 1096 50.120963 104.754397 0.865001                     0
+              cnn 1096 40.227495  98.807873 0.879892                     0
+{
+  "status": "complete",
+  "output_directory": "D:\\PYJH\\outputs\\20261030T014813_seed2",
+  "seed": 2,
+  "epochs_run": 66,
+  "best_epoch": 51,
+  "best_validation_mse_z": 0.047266047447919846,
+  "parameter_count": 2673,
+  "elapsed_seconds": 6.0730151999999995,
+  "stop_reason": "validation patience 15",
+  "checks": "PASS: dates, values, exclusions, normalization, checkpoint reload, saved metrics, persistence, OLS coefficients, source hashes",
+  "test_metrics": [
+    {
+      "model": "persistence",
+      "n": 1096,
+      "MAE_m3_s": 45.40110289481063,
+      "RMSE_m3_s": 127.35753578522021,
+      "NSE": 0.8004570589207193,
+      "negative_predictions": 0
+    },
+    {
+      "model": "linear_regression",
+      "n": 1096,
+      "MAE_m3_s": 50.12096322153914,
+      "RMSE_m3_s": 104.75439743417044,
+      "NSE": 0.8650006739646761,
+      "negative_predictions": 0
+    },
+    {
+      "model": "cnn",
+      "n": 1096,
+      "MAE_m3_s": 40.227494746985265,
+      "RMSE_m3_s": 98.80787343508725,
+      "NSE": 0.8798924857031044,
+      "negative_predictions": 0
+    }
+  ]
+}

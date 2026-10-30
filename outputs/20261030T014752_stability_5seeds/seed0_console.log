@@ -1,0 +1,53 @@
+Output: D:\PYJH\outputs\20261030T014754_seed0
+Fixed design: seed=0; train/validation/test=3617/731/1096; CNN parameters=2673
+epoch=10 train_mse_z=0.12890849 validation_mse_z=0.06115629 best_epoch=8
+epoch=20 train_mse_z=0.11433657 validation_mse_z=0.05659285 best_epoch=16
+epoch=30 train_mse_z=0.11300725 validation_mse_z=0.05683863 best_epoch=26
+epoch=40 train_mse_z=0.10648350 validation_mse_z=0.04833099 best_epoch=39
+epoch=50 train_mse_z=0.10585539 validation_mse_z=0.04621770 best_epoch=44
+epoch=60 train_mse_z=0.10385959 validation_mse_z=0.04753576 best_epoch=54
+epoch=70 train_mse_z=0.10099596 validation_mse_z=0.04492603 best_epoch=61
+epoch=80 train_mse_z=0.09927825 validation_mse_z=0.04316819 best_epoch=72
+epoch=87 train_mse_z=0.10297158 validation_mse_z=0.04977106 best_epoch=72
+            model    n  MAE_m3_s  RMSE_m3_s      NSE  negative_predictions
+      persistence 1096 45.401103 127.357536 0.800457                     0
+linear_regression 1096 50.120963 104.754397 0.865001                     0
+              cnn 1096 36.647579  99.236901 0.878847                     0
+{
+  "status": "complete",
+  "output_directory": "D:\\PYJH\\outputs\\20261030T014754_seed0",
+  "seed": 0,
+  "epochs_run": 87,
+  "best_epoch": 72,
+  "best_validation_mse_z": 0.04256005585193634,
+  "parameter_count": 2673,
+  "elapsed_seconds": 7.2892346,
+  "stop_reason": "validation patience 15",
+  "checks": "PASS: dates, values, exclusions, normalization, checkpoint reload, saved metrics, persistence, OLS coefficients, source hashes",
+  "test_metrics": [
+    {
+      "model": "persistence",
+      "n": 1096,
+      "MAE_m3_s": 45.40110289481063,
+      "RMSE_m3_s": 127.35753578522021,
+      "NSE": 0.8004570589207193,
+      "negative_predictions": 0
+    },
+    {
+      "model": "linear_regression",
+      "n": 1096,
+      "MAE_m3_s": 50.12096322153914,
+      "RMSE_m3_s": 104.75439743417044,
+      "NSE": 0.8650006739646761,
+      "negative_predictions": 0
+    },
+    {
+      "model": "cnn",
+      "n": 1096,
+      "MAE_m3_s": 36.64757934812159,
+      "RMSE_m3_s": 99.23690098014724,
+      "NSE": 0.8788471984889648,
+      "negative_predictions": 0
+    }
+  ]
+}

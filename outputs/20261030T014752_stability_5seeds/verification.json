@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "run_directories": [
+    "D:\\PYJH\\outputs\\20261030T005841_seed42",
+    "D:\\PYJH\\outputs\\20261030T014754_seed0",
+    "D:\\PYJH\\outputs\\20261030T014803_seed1",
+    "D:\\PYJH\\outputs\\20261030T014813_seed2",
+    "D:\\PYJH\\outputs\\20261030T014822_seed3"
+  ],
+  "seeds": [
+    42,
+    0,
+    1,
+    2,
+    3
+  ],
+  "additional_runs": 4,
+  "original_run_preserved": true,
+  "standard_deviation_ddof": 1,
+  "config_comparison": "All fields except seed and training script hash match original",
+  "test_dates_per_run": 1096,
+  "baseline_predictions_identical": true,
+  "all_checkpoints_and_metrics_independently_verified": true,
+  "cnn_wins_out_of_5": {
+    "persistence": {
+      "MAE": 5,
+      "RMSE": 5,
+      "NSE": 5
+    },
+    "linear_regression": {
+      "MAE": 5,
+      "RMSE": 5,
+      "NSE": 5
+    }
+  },
+  "interpretation": "Variation across training seeds on a fixed test period; not a confidence interval or significance test."
+}
