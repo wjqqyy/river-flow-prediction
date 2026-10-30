@@ -1,0 +1,8 @@
+{
+  "checked_date_local": "2026-10-31",
+  "status": "PASS",
+  "published_archives": "All five checkpoints restored; validation/test predictions, baselines and metrics verified.",
+  "portability": "Copied release to another directory; rebuilt processed data and samples from archived JSON; retrained all five seeds.",
+  "aggregate_comparison": "Reproduced original all_test_metrics.csv and metrics_mean_std.csv within rtol=1e-12, atol=1e-12.",
+  "original_research_preserved": true
+}
