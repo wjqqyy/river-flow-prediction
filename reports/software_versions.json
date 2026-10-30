@@ -1,0 +1,27 @@
+{
+  "checked_at_local": "2026-10-29T18:44:58.278821+08:00",
+  "python": "3.9.13 (tags/v3.9.13:6de2ca5, May 17 2022, 16:36:42) [MSC v.1929 64 bit (AMD64)]",
+  "python_executable": "D:\\PYJH\\.venv\\Scripts\\python.exe",
+  "virtual_environment": "D:\\PYJH\\.venv",
+  "base_python": "D:\\VS共享组件和工具\\Python39_64",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "machine": "AMD64",
+  "versions": {
+    "pip": "26.0.1",
+    "torch": "2.8.0+cpu",
+    "numpy": "2.0.2",
+    "pandas": "2.3.3",
+    "scikit-learn": "1.6.1",
+    "matplotlib": "3.9.4",
+    "scipy": "1.13.1"
+  },
+  "torch_cuda_build": null,
+  "experiment_device": "cpu",
+  "checks": {
+    "isolated_venv": true,
+    "required_imports": true,
+    "numpy_torch_interoperability": true,
+    "cpu_conv1d_forward_backward": true
+  },
+  "note": "Only an environment smoke check; no river forecasting model has been trained."
+}

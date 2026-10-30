@@ -1,0 +1,75 @@
+{
+  "checked_at_local": "2026-10-29T18:50:54.162366+08:00",
+  "raw_manifest": "D:\\PYJH\\data\\raw\\20261029T103540Z\\manifest.json",
+  "station_name": "POTOMAC RIVER NEAR WASH, DC LITTLE FALLS PUMP STA",
+  "station_id": "USGS-01646500",
+  "parameter": {
+    "id": "00060",
+    "parameter_name": "Discharge",
+    "unit_of_measure": "ft3/s",
+    "parameter_group_code": "PHY",
+    "parameter_description": "Discharge, cubic feet per second",
+    "medium": "Water",
+    "statistical_basis": "Mean",
+    "time_basis": "1 Day",
+    "weight_basis": null,
+    "particle_size_basis": null,
+    "sample_fraction": null,
+    "temperature_basis": null,
+    "epa_equivalence": "Not checked"
+  },
+  "statistic": {
+    "id": "00003",
+    "statistic_name": "MEAN",
+    "statistic_description": "MEAN VALUES"
+  },
+  "observations": 5479,
+  "expected_dates": 5479,
+  "start": "2010-01-01",
+  "end": "2024-12-31",
+  "duplicate_date_rows": 0,
+  "missing_date_count": 0,
+  "unexpected_date_count": 0,
+  "missing_raw_values": 0,
+  "invalid_or_missing_numeric_values": 0,
+  "negative_values": 0,
+  "source_units": {
+    "ft^3/s": 5479
+  },
+  "processed_unit": "m3/s",
+  "conversion_factor": 0.028316846592,
+  "approval_status_counts": {
+    "Approved": 5479
+  },
+  "qualifier_counts": {
+    "ESTIMATED": 100,
+    "EQUIP": 3,
+    "FORCEINTERPOLATION": 3,
+    "REVISED": 117
+  },
+  "rows_with_any_qualifier": 218,
+  "qualifier_combination_counts": {
+    "null": 5261,
+    "[\"REVISED\"]": 112,
+    "[\"ESTIMATED\"]": 95,
+    "[\"ESTIMATED\", \"REVISED\"]": 5,
+    "[\"FORCEINTERPOLATION\"]": 3,
+    "[\"EQUIP\"]": 3
+  },
+  "rows_needing_qualifier_review": 6,
+  "structural_checks_passed": true,
+  "model_ready": false,
+  "model_gate_reason": "Review six EQUIP/FORCEINTERPOLATION records; definitions and causes not confirmed. No models trained in this stage.",
+  "statistics_m3_s": {
+    "count": 5479.0,
+    "mean": 329.93700698537197,
+    "std": 419.18208674318873,
+    "min": 11.46832286976,
+    "25%": 92.59608835584,
+    "50%": 203.03179006464,
+    "75%": 387.9407983104,
+    "max": 5436.834545664
+  },
+  "raw_sha256_verified": true,
+  "policy": "Keep all values and flags; no zero filling, interpolation, peak removal, or synthetic observations."
+}
