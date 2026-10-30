@@ -1,0 +1,38 @@
+{
+  "status": "complete",
+  "output_directory": "D:\\PYJH\\outputs\\20261030T014803_seed1",
+  "seed": 1,
+  "epochs_run": 100,
+  "best_epoch": 94,
+  "best_validation_mse_z": 0.04201003909111023,
+  "parameter_count": 2673,
+  "elapsed_seconds": 8.166659600000001,
+  "stop_reason": "max epochs 100",
+  "checks": "PASS: dates, values, exclusions, normalization, checkpoint reload, saved metrics, persistence, OLS coefficients, source hashes",
+  "test_metrics": [
+    {
+      "model": "persistence",
+      "n": 1096,
+      "MAE_m3_s": 45.40110289481063,
+      "RMSE_m3_s": 127.35753578522021,
+      "NSE": 0.8004570589207193,
+      "negative_predictions": 0
+    },
+    {
+      "model": "linear_regression",
+      "n": 1096,
+      "MAE_m3_s": 50.12096322153914,
+      "RMSE_m3_s": 104.75439743417044,
+      "NSE": 0.8650006739646761,
+      "negative_predictions": 0
+    },
+    {
+      "model": "cnn",
+      "n": 1096,
+      "MAE_m3_s": 35.24889662160423,
+      "RMSE_m3_s": 96.51897227389816,
+      "NSE": 0.8853926549123842,
+      "negative_predictions": 0
+    }
+  ]
+}
