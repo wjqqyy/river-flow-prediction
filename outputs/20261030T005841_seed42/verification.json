@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "prediction_rows_verified": {
+    "validation": 731,
+    "test": 1096
+  },
+  "independent_metrics": "scikit-learn MAE, sqrt(MSE), R2 (= NSE for the same observed series)",
+  "checkpoint_prediction_reproduction": "all saved validation and test CNN predictions match",
+  "best_epoch": 45,
+  "epochs_run": 60,
+  "cnn_rmse_reduction_percent": {
+    "persistence": 23.099442638681623,
+    "linear_regression": 6.506402347432472
+  },
+  "plot_visual_review": "four PNGs inspected; labels, units and legends readable"
+}
