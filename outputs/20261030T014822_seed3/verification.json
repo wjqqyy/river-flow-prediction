@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "seed": 3,
+  "training_settings_match_original": true,
+  "dates_and_baseline_predictions_match_original": true,
+  "independent_metrics": "scikit-learn MAE, sqrt(MSE), R2 (= NSE)",
+  "checkpoint_predictions": "all 731 validation and 1096 test values reproduced",
+  "source_hashes_unchanged": true
+}
