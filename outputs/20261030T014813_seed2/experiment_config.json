@@ -1,0 +1,147 @@
+{
+  "seed": 2,
+  "device": "cpu",
+  "torch_threads": 1,
+  "deterministic_algorithms": true,
+  "architecture": "Sequential(\n  (0): Conv1d(1, 16, kernel_size=(3,), stride=(1,), padding=(1,))\n  (1): ReLU()\n  (2): Conv1d(16, 16, kernel_size=(3,), stride=(1,), padding=(1,))\n  (3): ReLU()\n  (4): Flatten(start_dim=1, end_dim=-1)\n  (5): Linear(in_features=112, out_features=16, bias=True)\n  (6): ReLU()\n  (7): Linear(in_features=16, out_features=1, bias=True)\n)",
+  "parameter_count": 2673,
+  "optimizer": "Adam",
+  "learning_rate": 0.001,
+  "batch_size": 64,
+  "loss": "MSE on standardized discharge",
+  "max_epochs": 100,
+  "early_stopping_patience": 15,
+  "early_stopping_min_delta": 0,
+  "checkpoint_selection": "lowest complete-validation-set MSE",
+  "training_shuffle": true,
+  "split_shuffle": false,
+  "num_workers": 0,
+  "postprocessing": "none; no clipping",
+  "test_updates": false,
+  "input_sha256": {
+    "data\\processed\\daily_discharge_m3s.csv": "7c851410e4dc7c649f583432e4e943413d5dd50250db605ed7f11e5c9c363a72",
+    "data\\model\\train.csv": "2c889393bba1cc88474a9338e538fe0a7e65920acaf6eefc692b0ac83457d066",
+    "data\\model\\validation.csv": "75b06af7066c16b070011734501a741d23a5a301d5c746924163bef25e3529b4",
+    "data\\model\\test.csv": "e815cd732d9d4272dbef42c0be4e43c9fd6c3f3717da2f02cea3be5186dbe3ff",
+    "data\\model\\sample_config.json": "9a249da73a6aeb0e79c1ac88d531dc4fe7e1e3ca604d050ce0caf99d3a3520b7",
+    "data\\model\\normalization.json": "fd6725fe94f4dd4b7bc83927bd9514c4c3fcc29faa2ea6aead1cbd32573b2f01"
+  },
+  "sample_preparation": {
+    "prepared_at": "2026-10-30T00:52:38.353495+08:00",
+    "model_ready": true,
+    "models_trained": false,
+    "source": "D:\\PYJH\\data\\processed\\daily_discharge_m3s.csv",
+    "source_sha256": "7c851410e4dc7c649f583432e4e943413d5dd50250db605ed7f11e5c9c363a72",
+    "raw_manifest": "D:\\PYJH\\data\\raw\\20261029T103540Z\\manifest.json",
+    "raw_sha256_verified": true,
+    "input_days": 7,
+    "horizon_days": 1,
+    "unit": "m3/s",
+    "feature_columns": [
+      "q_lag7_m3_s",
+      "q_lag6_m3_s",
+      "q_lag5_m3_s",
+      "q_lag4_m3_s",
+      "q_lag3_m3_s",
+      "q_lag2_m3_s",
+      "q_lag1_m3_s"
+    ],
+    "target_column": "target_m3_s",
+    "feature_order": "oldest (t-7) to newest (t-1)",
+    "review_dates_excluded": [
+      "2016-06-05",
+      "2016-06-06",
+      "2016-06-07",
+      "2017-07-22",
+      "2017-09-28",
+      "2017-09-30"
+    ],
+    "retained_qualifiers": [
+      "ESTIMATED",
+      "REVISED"
+    ],
+    "policy": "Approved data only; exclude any 8-day window containing an unusable day; no interpolation, smoothing, clipping or peak removal. Current revised archive, not historical real-time availability.",
+    "prediction_mode": "Daily rolling one-step prediction using previously observed discharge; history may cross split boundaries; no model updates during test.",
+    "calendar_days": 5479,
+    "usable_days": 5473,
+    "retained_samples": 5444,
+    "excluded_target_dates": 35,
+    "splits": {
+      "train": {
+        "target_period_start": "2010-01-01",
+        "target_period_end": "2019-12-31",
+        "samples": 3617,
+        "excluded_target_dates": 35,
+        "first_target_date": "2010-01-08",
+        "last_target_date": "2019-12-31",
+        "daily_qualifier_counts": {
+          "ESTIMATED": 68,
+          "REVISED": 1,
+          "review_excluded": 6
+        },
+        "retained_target_qualifier_counts": {
+          "ESTIMATED": 68,
+          "REVISED": 1
+        },
+        "retained_windows_with_flags": {
+          "has_estimated_flag": 211,
+          "has_revised_flag": 8
+        }
+      },
+      "validation": {
+        "target_period_start": "2020-01-01",
+        "target_period_end": "2021-12-31",
+        "samples": 731,
+        "excluded_target_dates": 0,
+        "first_target_date": "2020-01-01",
+        "last_target_date": "2021-12-31",
+        "daily_qualifier_counts": {
+          "ESTIMATED": 6,
+          "REVISED": 116,
+          "review_excluded": 0
+        },
+        "retained_target_qualifier_counts": {
+          "ESTIMATED": 6,
+          "REVISED": 116
+        },
+        "retained_windows_with_flags": {
+          "has_estimated_flag": 27,
+          "has_revised_flag": 123
+        }
+      },
+      "test": {
+        "target_period_start": "2022-01-01",
+        "target_period_end": "2024-12-31",
+        "samples": 1096,
+        "excluded_target_dates": 0,
+        "first_target_date": "2022-01-01",
+        "last_target_date": "2024-12-31",
+        "daily_qualifier_counts": {
+          "ESTIMATED": 26,
+          "REVISED": 0,
+          "review_excluded": 0
+        },
+        "retained_target_qualifier_counts": {
+          "ESTIMATED": 26,
+          "REVISED": 0
+        },
+        "retained_windows_with_flags": {
+          "has_estimated_flag": 79,
+          "has_revised_flag": 0
+        }
+      }
+    },
+    "scaler": {
+      "mean_m3_s": 368.46873350785893,
+      "std_m3_s": 467.040667941336,
+      "ddof": 0,
+      "fitted_day_count": 3646,
+      "fit_start_date": "2010-01-01",
+      "fit_end_date": "2019-12-31",
+      "formula": "z = (q_m3_s - mean_m3_s) / std_m3_s",
+      "inverse_formula": "q_m3_s = z * std_m3_s + mean_m3_s",
+      "applies_to": "CNN inputs and targets; saved sample CSVs remain in m3/s"
+    }
+  },
+  "training_script_sha256": "afd4b0668c045a2b1c88b25f399da8119af1f07441067cceb2235de0fa919548"
+}
