@@ -1,0 +1,11 @@
+{
+  "mean_m3_s": 368.46873350785893,
+  "std_m3_s": 467.040667941336,
+  "ddof": 0,
+  "fitted_day_count": 3646,
+  "fit_start_date": "2010-01-01",
+  "fit_end_date": "2019-12-31",
+  "formula": "z = (q_m3_s - mean_m3_s) / std_m3_s",
+  "inverse_formula": "q_m3_s = z * std_m3_s + mean_m3_s",
+  "applies_to": "CNN inputs and targets; saved sample CSVs remain in m3/s"
+}
